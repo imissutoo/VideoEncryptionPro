@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listview_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="7dip" >
+
+    <CheckBox
+        android:id="@+id/file_list_list1_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dip" />
+
+    <ImageView
+        android:id="@+id/file_list_list1_image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_shape" />
+
+    <TextView
+        android:id="@+id/file_list_list1_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toLeftOf="@id/file_list_list1_checkBox"
+        android:layout_toRightOf="@id/file_list_list1_image"
+        android:singleLine="false"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</RelativeLayout>

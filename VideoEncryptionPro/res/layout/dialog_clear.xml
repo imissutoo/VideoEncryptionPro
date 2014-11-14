@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_clear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/dialog_clear_progressing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/progressing"
+        android:textSize="8pt" />
+
+    <ProgressBar
+        android:id="@+id/dialog_clear_progressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/dialog_clear_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="0%"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/dialog_clear_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/dialog_clear_progressBar"
+            android:text="0/100"
+            android:textSize="8pt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/dialog_clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_selector"
+            android:text="@string/slowlyClear"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

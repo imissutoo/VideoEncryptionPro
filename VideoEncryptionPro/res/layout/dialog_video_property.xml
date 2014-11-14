@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:shrinkColumns="1"
+    android:stretchColumns="*"
+    android:id="@+id/dialog_video_property" >
+
+    <TableRow>
+
+        <TextView android:text="@string/fileAndBlocks" />
+
+        <TextView android:text="@string/takeplace"
+            android:id="@+id/dialog_video_property_fileName" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="@string/location" />
+
+        <TextView android:text="@string/takeplace"
+             android:id="@+id/dialog_video_property_path" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="@string/size" />
+
+        <TextView android:text="@string/takeplace"
+             android:id="@+id/dialog_video_property_size" />
+    </TableRow>
+    <TableRow>
+
+        <TextView android:text="@string/date" />
+
+        <TextView android:text="@string/takeplace"
+             android:id="@+id/dialog_video_property_date" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/temp100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ffb90f"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setPassword"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/temp100"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/textViewFirstTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firstTime"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextFirst"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewFirstTime"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:scrollHorizontally="true" />
+
+        <TextView
+            android:id="@+id/textView_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/editTextFirst"
+            android:layout_below="@id/editTextFirst"
+            android:text="@string/password"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editTextFirst2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_warning"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/makeSurePassword"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:scrollHorizontally="true"/>
+
+        <TextView
+            android:id="@+id/textView_warning2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/editTextFirst2"
+            android:layout_below="@id/editTextFirst2"
+            android:text="@string/differentPassword"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/start_Button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/button_selector"
+            android:text="@string/startUse"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>
